@@ -16,7 +16,13 @@ export default async function Home({ params }) {
               <Link className="btn line" href={`/${lang}/partenariats`}>{d.hero.cta2}</Link>
             </div>
           </div>
-          <img className="hero-photo" src="/cuiseur-hero.png" alt="Cuiseur écologique et plat mijoté aux légumes" width="960" height="600" />
+          <div className="hero-art" aria-label="Cuiseur écologique en textile artisanal">
+            <div className="hero-art-inner">
+              <span>Cuisson</span>
+              <strong>propre</strong>
+              <small>chaleur conservée · geste local</small>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -47,9 +53,17 @@ export default async function Home({ params }) {
         </div>
       </section>
 
-      <section className="wrap image-gallery" aria-label="Le cuiseur en situation">
-        <figure><img src="/cuiseur-usage.png" alt="Préparation d'un plat dans le cuiseur écologique" width="800" height="600" /><figcaption>Préparer, couvrir, laisser mijoter.</figcaption></figure>
-        <figure><img src="/cuiseur-detail.png" alt="Détail du cuiseur écologique en terre cuite" width="800" height="600" /><figcaption>Un objet simple, durable et chaleureux.</figcaption></figure>
+      <section className="wrap editorial-proof" aria-label="L'univers Cuisson Propre">
+        <div className="editorial-copy">
+          <p className="eyebrow">L&apos;univers Cuisson Propre</p>
+          <h2>Une solution locale, pensée avec soin.</h2>
+          <p>Le cuiseur s&apos;inscrit dans une démarche plus large autour de la cuisson propre, de la transmission et de foyers plus économes au Cameroun.</p>
+        </div>
+        <div className="editorial-note">
+          <span className="quote-mark">“</span>
+          <p>Nous privilégions les objets utiles, réparables et adaptés aux réalités de chaque foyer.</p>
+          <span className="note-signature">Cuisson Propre · Yaoundé</span>
+        </div>
       </section>
 
       <section className="wrap proof-section">
