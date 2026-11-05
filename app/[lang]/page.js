@@ -16,7 +16,7 @@ export default async function Home({ params }) {
               <Link className="btn line" href={`/${lang}/partenariats`}>{d.hero.cta2}</Link>
             </div>
           </div>
-          <img className="patch" src="/logo.jpg" alt="Cuiseur Écologique" width="360" height="360" />
+          <img className="hero-photo" src="/cuiseur-hero.png" alt="Cuiseur écologique et plat mijoté aux légumes" width="960" height="600" />
         </div>
       </section>
 
@@ -45,6 +45,11 @@ export default async function Home({ params }) {
             ))}
           </div>
         </div>
+      </section>
+
+      <section className="wrap image-gallery" aria-label="Le cuiseur en situation">
+        <figure><img src="/cuiseur-usage.png" alt="Préparation d'un plat dans le cuiseur écologique" width="800" height="600" /><figcaption>Préparer, couvrir, laisser mijoter.</figcaption></figure>
+        <figure><img src="/cuiseur-detail.png" alt="Détail du cuiseur écologique en terre cuite" width="800" height="600" /><figcaption>Un objet simple, durable et chaleureux.</figcaption></figure>
       </section>
 
       <section className="wrap proof-section">
