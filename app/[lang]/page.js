@@ -26,6 +26,7 @@ export default async function Home({ params }) {
           {d.steps.map((s, i) => (
             <li key={s.t}>
               <span className="n">{i + 1}</span>
+              <img className="step-image" src={`/etape-${i + 1}.png`} alt={s.t} width="320" height="180" />
               <h3>{s.t}</h3>
               <p>{s.d}</p>
             </li>
